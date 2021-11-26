@@ -138,7 +138,7 @@ def puan_say(depo, pisti):
 			puan += 1
 
 		if i == "Karo 10":
-			puan += 5
+			puan += 3
 
 		if i == "Sinek 2":
 			puan += 2
