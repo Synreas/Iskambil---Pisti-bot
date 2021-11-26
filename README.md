@@ -12,7 +12,7 @@ Puanlama:
 * Her J = 1 puan
 * Her A = 1 puan
 * Sinek 2 = 2 puan
-* Karo 10 (güzel on) = 5 puan
+* Karo 10 (güzel onlu) = 3 puan
 * Pişti = 10 puan
 * Pişti (J) = 20 puan
 * Ayrıca fazla kartı olan 3 puan kazanır
