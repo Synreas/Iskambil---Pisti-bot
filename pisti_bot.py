@@ -84,9 +84,12 @@ def kart_al_oyuncu():
 	print("\nOrtaya {} atıldı.".format(atilacak_oyuncu))
 	sleep(0.5)
 
-def karsilastir(atilan, depo, pisti):
+def karsilastir(atilan, depo, kim):
 	global ortadaki
 	global ortadakiler
+	global pisti_pc
+	global pisti_oyuncu
+	pisti = 0
 	ortadakiler.append(atilan)
 #	print("ortadaki:{}\natilan:{}".format(ortadaki, atilan))
 	if ortadaki[-1] == atilan[-1]:
@@ -98,6 +101,12 @@ def karsilastir(atilan, depo, pisti):
 			else:
 				pisti += 10
 				print(pisti)
+
+			if kim == "pc":
+				pisti_pc += pisti
+			elif kim == "oyuncu":
+				pisti_oyuncu += pisti
+
 		depo += ortadakiler
 		ortadaki = "boş"
 		ortadakiler = []
@@ -183,9 +192,9 @@ sleep(2)
 for tur in range(1, 25):
 	yazdir()
 	kart_al_oyuncu()
-	karsilastir(atilacak_oyuncu, depo_oyuncu, pisti_oyuncu)
+	karsilastir(atilacak_oyuncu, depo_oyuncu, "oyuncu")
 	kart_at()
-	karsilastir(atilacak_pc, depo_pc, pisti_pc)
+	karsilastir(atilacak_pc, depo_pc, "pc")
 	if len(el_oyuncu) == 0:
 		if cekilen_kart == 52:
 			print("Maç bitti!")
