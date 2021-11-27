@@ -69,7 +69,7 @@ def kart_al_oyuncu():
 			al = int(al) - 1
 
 		except ValueError:
-			al = int(input("Lütfen sayı giriniz: "))
+			al = input("Lütfen sayı giriniz: ")
 
 		else: 
 			break
