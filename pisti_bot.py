@@ -97,10 +97,10 @@ def karsilastir(atilan, depo, kim):
 			print("Pişti!")
 			if ortadaki[-1] == "J":
 				pisti += 20
-				print(pisti)
+#				print(pisti)
 			else:
 				pisti += 10
-				print(pisti)
+#				print(pisti)
 
 			if kim == "pc":
 				pisti_pc += pisti
